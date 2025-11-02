@@ -2,6 +2,20 @@
 background-color: #fff;
 }
 
+.img-link{
+transition: opocity 0.4s ease;
+}
+
+.img-link:hover{
+opacity: 0.8;
+}
+
+.img-link:active{
+opacity: 0.6;
+}
+
+
+
 .sitenav-list{
     font-family: "Roboto", sans-serif;
     list-style: none;
@@ -15,7 +29,19 @@ letter-spacing: 1px;
 text-transform: uppercase;
 text-decoration: none;
 color: black;
+transition: color 0.4s ease,
+opacity 0.4s ease;
 }
+
+.sitenav-link:hover{
+color: #ff7500;
+}
+
+.sitenav-link:active{
+opacity: 0.6;;
+}
+
+
 
 .main-link{
 font-family: "Roboto", sans-serif;
@@ -24,6 +50,15 @@ line-height: 15px;
 background-color: #ff7500;
 color: #fff;
 text-decoration: none;
+transition: opacity 0.4s ease;
+}
+
+.main-link:hover{
+opacity:0.8;
+}
+
+.main-link:active{
+opacity:0.6;
 }
 
 
@@ -161,4 +196,12 @@ background-color: #f8f8f8;
     color: #252420;
     font-style: 16px;
     line-height: 19px;
+}
+
+.site-footer-links a:hover{
+    color: #ff7500;
+}
+
+.site-footer-links a:focus{
+    opacity: 0.6;
 }
