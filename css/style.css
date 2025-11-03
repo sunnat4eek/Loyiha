@@ -49,6 +49,21 @@
     opacity 0.4s ease;
 }
 
+.site-nav-link{
+font-weight: 500;
+font-size: 13px;
+line-height: 15px;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-decoration: none;
+color: black;
+transition: color 0.4s ease,
+opacity 0.4s ease;
+padding-bottom: 4px;
+border-bottom: #ff7500 solid;
+}
+
+
 .sitenav-link:hover{
     color: #ff7500;
 }
@@ -156,35 +171,48 @@
 
 }
 
-.feature-heading{
-    font-family: "Roboto", sans-serif;
-    width: 440px;
-    font-size: 72px;
-    line-height: 1.2;
-    letter-spacing: 0.5px;
+.features-heading{
+        width: 100%;
     max-width: 500px;
     font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
     color: #000000;
     margin-bottom: 72px;
 }
 
+.features-list{
+display: flex;
+list-style: none;
+justify-content: space-around;
+align-items: center;
+}
+
 .feature{
-    width: 400px;
+    width: 340px;
+    display: grid;
+    gap: 32px;
 }
 
 
 .feature-icon-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: rgba(255, 117, 0, 0.2);
+    border-radius: 50%;
 }
-
 
 .feature-tittle{
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.5px;
+    padding: 210px 0;
+    margin-bottom: 35px;
 }
 
 
@@ -239,10 +267,17 @@
     width: 440px;
     height: 440px;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 .site-footer{
     background-color: #f8f8f8;
+}
+
+.site-footer-top{
+display: flex;
+align-items: center;
+justify-content: space-around;
 }
 
 .site-footer ul {
@@ -258,7 +293,6 @@
     background: rgba(37, 36, 32, 0.5);
     margin: 0 auto;
     margin-bottom: 64px;
-
 }
 
 
@@ -285,12 +319,39 @@
 }
 
 
-.site-footer-socials{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 15px;
+.site-footer-socials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
+
+
+.site-footer-socials li {
+  margin-right: 16px;
+}
+
+.site-footer-socials li:last-child {
+  margin-right: 0;
+}
+
+.site-footer-socials a {
+  display: block;
+  color: #252420;
+}
+
+.site-footer-socials a:hover {
+  color:#ff7500
+}
+
+.site-footer-socials a:active {
+  opacity: 0.6;
+}
+
+.site-footer-socials svg {
+  display: block;
+}
+
 
 
 .site-footer-link{
@@ -309,5 +370,10 @@
 
 .link-img{
     display: inline-block;
-    margin-left: 350px;
+}
+
+
+.feature-icon-img{
+    display: flex;
+
 }
